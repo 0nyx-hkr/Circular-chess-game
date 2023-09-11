@@ -1,0 +1,29 @@
+Creating the design flow for the circualar chess basic game fucntion 
+
+
+row > cols hierarchy
+classes:
+            Board
+            game
+            square
+            pieces
+                        each piece valid moves
+
+            extra
+
+Class Board  -> list[list] :
+        last three bin 000  represents piece value
+        first two bin 00 represents color of piece 
+        rules child class
+        
+Class game-> 
+        where pygame runs
+Class square ->
+        calls from board
+        def :> piece_present
+Class pieces >
+        def add_pices
+        def get pices_pic
+
+
+            
