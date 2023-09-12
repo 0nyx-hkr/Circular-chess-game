@@ -5,6 +5,7 @@ class Piece :
     def __init__(self,name,color,value,texture =None,texture_rect=None):
         self.name = name
         self.color = color
+        self.moved = False
         value_sign = 1 if color=="white" else  -1
         self.value = value * value_sign
         self.texture  = texture
@@ -20,7 +21,9 @@ class Piece :
 class Pawn(Piece):
 
     def __init__(self,color):
+        self.p_col = 1 if color=='white' else 0
         super().__init__('pawn',color,1.0)
+
 
 
 class Knight(Piece):

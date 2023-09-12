@@ -1,5 +1,6 @@
 class  Move:
-    def __init__(self) :
+    def __init__(self,initial,final) :
         # self.initial_move
-        pass
+        self.initial = initial
+        self.final = final
     
