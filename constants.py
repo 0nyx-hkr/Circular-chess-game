@@ -1,5 +1,5 @@
-screen_width = 300
-screen_height = 600
+screen_width = 352
+screen_height = 688
 
 rows = 16
 columns = 4

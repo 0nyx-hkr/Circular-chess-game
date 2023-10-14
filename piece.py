@@ -17,11 +17,16 @@ class Piece :
 
     def add_moves(self,move):
         self.moves.append(move)
+    def clear_moves(self):
+        self.moves = []
+
+    
 
 class Pawn(Piece):
 
     def __init__(self,color):
         self.p_col = 1 if color=='white' else 0
+        self.dir = 0
         super().__init__('pawn',color,1.0)
 
 
